@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jadwal Belajar Mingguan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="sc.css">
+</head>
+<body>
+<main>
+  <h1>Jadwal Belajar Minggu Ini</h1>
+  <p class="sub">Pilih hari, tambahkan pelajaran, lalu tandai ada PR atau tidak.</p>
+
+  <div class="tabs" role="tablist" id="tabs"></div>
+
+  <h2 id="dayTitle"></h2>
+  <div class="list" id="list"></div>
+
+  <div class="add" role="group" aria-label="Tambah sesi belajar">
+    <label class="f">Mata pelajaran
+      <input type="text" id="subject" placeholder="Contoh: Matematika" maxlength="60">
+    </label>
+    <div class="two">
+      <label class="f">Mulai <input type="time" id="start" value="15:00"></label>
+      <label class="f">Selesai <input type="time" id="end" value="16:00"></label>
+    </div>
+    <button class="btn" id="addBtn" type="button">Tambah ke hari ini</button>
+  </div>
+
+  <div class="sum" id="sum"></div>
+  <button class="wipe" id="wipe" type="button">Hapus semua data</button>
+</main>
+
+<script src="js.js"></script>
+</body>
+</html>
